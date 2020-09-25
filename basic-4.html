@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Flex</title>
+	<link rel="stylesheet" href="default.css">
+	<style>
+        /* .item {
+            flex: 1;
+            flex-grow: 1; flex-shrink: 1; flex-basis: 0%;
+
+            flex: 1 1 auto;
+            flex-grow: 1; flex-shrink: 1; flex-basis: auto;
+
+            flex: 1 500px;
+            flex-grow: 1; flex-shrink: 1; flex-basis: 500px;
+        } */
+        .flex-container {
+            display: flex;
+        }
+        .flex-item:nth-child(1) {
+            /* flex: 1; */
+            /* width: 20%;
+            overflow: hidden; */
+            flex: 0 1 20%;
+        }
+        .flex-item:nth-child(2) {
+            /* flex: 3; */
+            /* width: 60%; */
+            flex: 0 1 60%;
+        }
+        .flex-item:nth-child(3) {
+            /* flex: 1; */
+            /* width: 20%; */
+            flex: 0 1 20%;
+        }
+        .flex-item p {
+            /* white-space: nowrap; */
+        }
+    </style>
+</head>
+<body>
+	<div class="flex-container">
+        <div class="flex-item">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur debitis neque molestias minus ex earum quasi sit omnis sunt veritatis sed nam facilis ea harum amet ipsam error, et expedita, ducimus cum sequi iure. Veniam unde, tempora eos tenetur quo eius ad harum tempore accusamus eaque, sed quas inventore ab!</p></div>
+        <div class="flex-item">BBB</div>
+        <div class="flex-item">CCCCCCC</div>
+    </div>
+</body>
+</html>

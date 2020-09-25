@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Flex</title>
+	<link rel="stylesheet" href="default.css">
+	<style>
+        .page {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            /* IE에서는 그냥 height써야됨 */
+        }
+        .content {
+            flex: 1 auto;
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+	<div class="page">
+        <header class="header flex-item">header</header>
+        <section class="content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti possimus tenetur repellendus eum libero dolores molestiae ab assumenda cupiditate nisi. Magnam natus eaque dolorum voluptate nulla eum et obcaecati earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, totam eligendi ipsa, iusto aliquid harum vero ullam vitae ex perferendis placeat cum reprehenderit quaerat nesciunt cumque quisquam a nemo dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloribus quam eaque et error pariatur soluta nostrum necessitatibus nulla, assumenda corporis unde corrupti. Atque ipsum explicabo nostrum a est ut!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti possimus tenetur repellendus eum libero dolores molestiae ab assumenda cupiditate nisi. Magnam natus eaque dolorum voluptate nulla eum et obcaecati earum? Lorem ipsum dolor
+        </section>
+        <footer class="footer flex-item">footer</footer>
+    </div>
+</body>
+</html>
