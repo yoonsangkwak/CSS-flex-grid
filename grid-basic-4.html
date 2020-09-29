@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Grid</title>
+    <link rel="stylesheet" href="grid-default.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: repeat(3, minmax(100px, auto)); */
+            grid-auto-rows: minmax(100px, auto);
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+	<div class="grid-container">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis debitis enim molestias fugit ut blanditiis nobis dolorem aliquid, corrupti ipsam dolorum provident sit ratione assumenda error accusantium, illum minima nostrum dicta reprehenderit consequatur reiciendis fuga ipsum praesentium! Quas enim odio autem eos error explicabo, necessitatibus, aperiam eius laborum nisi ullam.</div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
+    </div>
+</body>
+</html>

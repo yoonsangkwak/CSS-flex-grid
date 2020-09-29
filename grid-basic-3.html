@@ -7,7 +7,10 @@
 	<title>CSS Grid</title>
     <link rel="stylesheet" href="grid-default.css">
     <style>
-        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20%, auto));
+        }
     </style>
 </head>
 <body>
@@ -15,12 +18,12 @@
         <div class="grid-item">A</div>
         <div class="grid-item">B</div>
         <div class="grid-item">C</div>
-        <div class="grid-item">D</div>
+        <!-- <div class="grid-item">D</div>
         <div class="grid-item">E</div>
         <div class="grid-item">F</div>
         <div class="grid-item">G</div>
         <div class="grid-item">H</div>
-        <div class="grid-item">I</div>
+        <div class="grid-item">I</div> -->
     </div>
 </body>
 </html>
