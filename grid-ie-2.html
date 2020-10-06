@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Grid</title>
+    <link rel="stylesheet" href="grid-default.css">
+    <style>
+        /* 표준 */
+        /* .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            height: 80vh;
+        } */
+        /* IE */
+        .grid-container {
+            display: -ms-grid;
+            -ms-grid-columns: (1fr)[3];
+            /* grid-template-columns: repeat(3, 1fr); */
+        }
+        
+        .grid-item:nth-child(1) {
+            -ms-grid-column: 1;
+        }
+        .grid-item:nth-child(2) {
+            -ms-grid-column: 2;
+        }
+        .grid-item:nth-child(3) {
+            -ms-grid-column: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+    </div>
+</body>
+</html>
